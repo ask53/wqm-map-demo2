@@ -74,9 +74,9 @@ function setGlobals() {
 		document.getElementsByName("contam_button")[i].innerHTML = CONTAMINANTS[i];
 	}
 	
-	document.getElementById("f_title").innerHTML = F_TITLE;
-	document.getElementById("as_title").innerHTML = AS_TITLE;
-	document.getElementById("risk_title").innerHTML = RISK_TITLE;
+	//document.getElementById("f_title").innerHTML = F_TITLE;
+	//document.getElementById("as_title").innerHTML = AS_TITLE;
+	//document.getElementById("risk_title").innerHTML = RISK_TITLE;
 	document.getElementById("how_to_read").src = LEGEND_URL;
 	document.getElementById("help_button").src = HELP_URL;
 	
