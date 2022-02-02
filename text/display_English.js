@@ -47,13 +47,13 @@ var RISK_LABELS = ["\xa0\xa0\xa0Meets\xa0all\xa0standards",
 
 var LABELS = [F_LABELS, AS_LABELS];
 
-var F_TITLE = "Fluoride (mg/L): WHO Limit = 1.5; Mexican Limit = 1.5";
-var AS_TITLE = "Arsenic (&mu;g/L): WHO Limit = 10; Mexican Limit = 25";
-var RISK_TITLE = "<big>Water Risk Level</big> <br>WHO Limits: Fluoride = 1.5 mg/L; Arsenic = 10 &mu;g/L";
+//var F_TITLE = "Fluoride (mg/L): WHO Limit = 1.5; Mexican Limit = 1.5";
+//var AS_TITLE = "Arsenic (&mu;g/L): WHO Limit = 10; Mexican Limit = 25";
+//var RISK_TITLE = "<big>Water Risk Level</big> <br>WHO Limits: Fluoride = 1.5 mg/L; Arsenic = 10 &mu;g/L";
 
 var OLD_DATA_MSG = "<em>\xa0\xa0\xa0\xa0\xa0\xa0\xa0HISTORICAL DATA</em><br>";
 
-var LEGEND_URL = "https://caminosdeagua.github.io/wqm-map/img/howToRead_ENG.png";
+var LEGEND_URL = "https://ask53.github.io/wqm-map-demo2/img/howToRead_ENG.png";
 
 var PRINTING_SUMMARY_MSG = "\n-----***-----***-----***-----***-----***-----***-----\nGreat job, you hacker you! Enjoy the summary...\n-----***-----***-----***-----***-----***-----***-----\n "
 var TOTAL_SITES_MSG = "Distinct sites (wells, taps, pipa, etc.) sampled at least once:";

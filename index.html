@@ -56,16 +56,14 @@
 			</a>
 		</div>
 		
-		<!-- THIS IS THE BOX THAT ALLOWS YOU TO SELECT SATELLITE/STREET VIEW
-		TO UNCOMMENT ALSO SEE THE TWO LINES IN setGlobals() fn in scripts.js
-		
+		<!-- --------- TO DISPLAY, UNCOMMENT LINES IN setGlobals() in scripts.js --------
 		<div class="container" id="map-tile-selector-div">
 			<img class="img-button-image" id="map-tile-selector">
 			</img>
 			<div class="img-button-middle" onclick="toggleTileView();">
 				<div class="img-button-text" id="img-button-text"></div>
 			</div>
-		</div> -->
+		</div>-->
 		
 		<div id='WaterMap'> 	<!-- creates the div element that holds the map -->
 				
@@ -91,16 +89,22 @@
 				Alternately, you can copy and paste one of the legend div elements from below
 			and reformat it to suit the needs of the contaminant you want to display. -->
 			
+			
+			
+			
+			
 			<!-- The legend for fluoride -->
-			<div class='cartodb-legend density' id='fluoride_legend' style='display: none'>  
+			
+			
+			<!--<div class='cartodb-legend density' id='fluoride_legend' style='display: none'>  
 				<ul>
 					<li class="min" style="text-transform:none" id="f_title"></li>
 					<li class="graph leg" style="border-radius: 0; border:none">
 						<div class="colors">
-							<div class="quartile" style="background-color:#229A00"></div>
-							<div class="quartile" style="background-color:#FF9900"></div>
-							<div class="quartile" style="background-color:#F11810"></div>
-							<div class="quartile" style="background-color:#000000"></div>
+							<div class="quartile" style="background-color:#abd9e9; border:1px solid black;"></div>
+							<div class="quartile" style="background-color:#ffffbf; border:1px solid black;"></div>
+							<div class="quartile" style="background-color:#fdae61; border:1px solid black;"></div>
+							<div class="quartile" style="background-color:#d7191c; border:1px solid black;"></div>
 						</div>
 						<div class="colors" style="font-weight:normal; text-align: center">
 							<div class="quartile" style="padding-top: 5px" name="f"></div>
@@ -110,17 +114,22 @@
 						</div>
 					</li>
 				</ul>
-			</div>
+			</div>-->
+			
+			<img class="legend" id="fluoride_legend" style='display: none' src="https://ask53.github.io/wqm-map-demo2/img/legend_f.png" ></img>
+
+			
 			
 			<!-- The legend for arsenic -->
-			<div class='cartodb-legend density' id='arsenic_legend' style='display: none;'>  
+			
+			<!--<div class='cartodb-legend density' id='arsenic_legend' style='display: none;'>  
 				<ul>
 					<li class="min" id="as_title" style="text-transform:none" ></li>
 					<li class="graph leg" style="border-radius: 0; border:none">
 						<div class="colors">
-							<div class="quartile" style="background-color:#229A00"></div>
-							<div class="quartile" style="background-color:#F11810"></div>
-							<div class="quartile" style="background-color:#000000"></div>
+							<div class="quartile" style="background-color:#abd9e9; border:1px solid black;"></div>
+							<div class="quartile" style="background-color:#fdae61; border:1px solid black;"></div>
+							<div class="quartile" style="background-color:#d7191c; border:1px solid black;"></div>
 						</div>
 						<div class="colors" style="font-weight:normal; text-align: center">
 							<div class="quartile" style="padding-top: 5px" name="as"></div>
@@ -129,26 +138,32 @@
 						</div>
 					</li>
 				</ul>
-			</div>
+			</div>-->
+			
+			
+			<img class="legend" id="arsenic_legend" style='display: none' src="https://ask53.github.io/wqm-map-demo2/img/legend_as.png" ></img>
 			
 			<!-- The legend for the Total Risk map -->
-			<div class='cartodb-legend custom' id='risk_legend' style="display: none">	
+			
+			<!--<div class='cartodb-legend custom' id='risk_legend' style="display: none">	
 				<div class="legend-title", id="risk_title" style="text-transform:none"></div>
 				<ul>
 					<li>
-						<div class="bullet" style="background: #229A00; text-transform:none" name="risk" onclick="easterEggGo();"></div> 
+						<div class="bullet" style="background: #abd9e9; text-transform:none; border:1px solid black;" name="risk" onclick="easterEggGo();"></div> 
 					</li>
 					<li>
-						<div class="bullet" style="background:#FFA300; text-transform:none" name="risk"></div>
+						<div class="bullet" style="background:#ffffbf; text-transform:none; border:1px solid black;" name="risk"></div>
 					</li>
 					<li>
-						<div class="bullet" style="background:#F11810; text-transform:none" name="risk"></div>
+						<div class="bullet" style="background:#fdae61; text-transform:none; border:1px solid black;" name="risk"></div>
 					</li>
 					<li>
-						<div class="bullet" style="background:#000000; text-transform:none" name="risk"></div>
+						<div class="bullet" style="background:#d7191c; text-transform:none; border:1px solid black;" name="risk"></div>
 					</li>
 				</ul>
-			</div>
+			</div>-->
+			
+			<img class="legend" id="risk_legend" style='display: none' src="https://ask53.github.io/wqm-map-demo2/img/legend_risk.png" ></img>
 			
 			<img id="help_button" style="display: none;" class="toggle_button" onmouseenter="changeHelpSrc('hover')" onmouseleave="changeHelpSrc('leave')" onclick="openHelp()"></img>
 			<img id="how_to_read" onmouseenter="disableMapControls();" onmouseleave="enableMapControls();"></img>

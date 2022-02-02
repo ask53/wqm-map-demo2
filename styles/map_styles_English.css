@@ -135,8 +135,12 @@ allows the user to select the relevant contaminant. */
 	display: block;
 }
 
-div.cartodb-legend {
-	width: 285px;		
+img.legend {
+	position: fixed;
+	width: 400px;
+	z-index: 99;
+	bottom: 22px;
+	right: 5px
 }
 
 #how_to_read {
@@ -298,6 +302,8 @@ div#map-tile-selector-div:hover .img-button-middle {
   opacity: 1;
   cursor: pointer;
 }
+
+
 
 #overlay {
 	display: none;
